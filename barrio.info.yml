@@ -1,0 +1,61 @@
+name: Barrio
+type: profile
+description: 'Boostrap Barrio Based Installation.'
+version: VERSION
+core: 8.x
+dependencies:
+  # core
+  - node
+  - history
+  - block
+  - breakpoint
+  - ckeditor
+  - config
+  - contextual
+  - contact
+  - menu_link_content
+  - entity_reference
+  - datetime
+  - block_content
+  - quickedit
+  - editor
+  - help
+  - image
+  - menu_ui
+  - options
+  - path
+  - page_cache
+  - dynamic_page_cache
+  - taxonomy
+  - dblog
+  - search
+  - shortcut
+  - toolbar
+  - field_ui
+  - file
+  - rdf
+  - views
+  - views_ui
+  - tour
+  - automated_cron
+  # contrib
+  - metatag
+  - ds
+  - ctools
+  - token
+  - redirect
+  - path_auto
+  - admin_toolbar
+  - backup_migrate
+  - block_styles
+  - styles_api
+  - filefield_paths
+  - menu_link_attributes
+  - bootstrap_layouts
+  - bootstrap_library
+  - button_link
+  - contact_storage
+themes:
+  - bartik
+  - seven
+  - bootstrap_barrio
