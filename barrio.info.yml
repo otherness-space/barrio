@@ -44,7 +44,7 @@ dependencies:
   - ctools
   - token
   - redirect
-  - path_auto
+  - pathauto
   - admin_toolbar
   - backup_migrate
   - block_styles
