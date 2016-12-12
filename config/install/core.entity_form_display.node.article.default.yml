@@ -1,13 +1,13 @@
+langcode: en
 status: true
 dependencies:
   config:
     - field.field.node.article.body
-    - field.field.node.article.comment
     - field.field.node.article.field_image
+    - field.field.node.article.field_tags
     - image.style.thumbnail
     - node.type.article
   module:
-    - comment
     - image
     - path
     - text
@@ -24,44 +24,39 @@ content:
       summary_rows: 3
       placeholder: ''
     third_party_settings: {  }
-  comment:
-    type: comment_default
-    weight: 10
-    settings: {  }
-    third_party_settings: {  }
   created:
     type: datetime_timestamp
-    weight: 7
+    weight: 10
     settings: {  }
     third_party_settings: {  }
   field_image:
     type: image_image
-    weight: 14
+    weight: 4
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail
     third_party_settings: {  }
-  langcode:
-    type: language_select
+  field_tags:
+    type: entity_reference_autocomplete_tags
     weight: 3
     settings: {  }
     third_party_settings: {  }
   path:
     type: path
-    weight: 11
+    weight: 30
     settings: {  }
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 8
+    weight: 15
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 9
+    weight: 16
     third_party_settings: {  }
   title:
     type: string_textfield
@@ -69,10 +64,6 @@ content:
     settings:
       size: 60
       placeholder: ''
-    third_party_settings: {  }
-  translation:
-    weight: 6
-    settings: {  }
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete

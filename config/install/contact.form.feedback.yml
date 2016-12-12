@@ -1,17 +1,10 @@
+langcode: en
 status: true
-dependencies:
-  module:
-    - contact_storage
-third_party_settings:
-  contact_storage:
-    submit_text: 'Send Message'
-    show_preview: false
-    disabled_form_message: 'This contact form has been disabled.'
-    maximum_submissions_user: 0
+dependencies: {  }
 id: feedback
-label: Contact
+label: 'Website feedback'
 recipients:
-  - contact@your.org
+  - admin@example.com
 reply: ''
 weight: 0
 message: 'Your message has been sent.'

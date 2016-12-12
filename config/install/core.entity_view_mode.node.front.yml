@@ -1,8 +1,0 @@
-status: true
-dependencies:
-  module:
-    - node
-id: node.front
-label: Front
-targetEntityType: node
-cache: true

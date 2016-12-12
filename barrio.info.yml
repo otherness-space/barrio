@@ -46,7 +46,7 @@ dependencies:
   - redirect
   - pathauto
   - admin_toolbar
-  - backup_migrate
+#  - backup_migrate
   - block_styles
   - styles_api
   - filefield_paths

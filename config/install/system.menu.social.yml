@@ -1,6 +1,0 @@
-status: true
-dependencies: {  }
-id: social
-label: 'social menu'
-description: 'Social links'
-locked: true
