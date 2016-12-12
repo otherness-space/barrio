@@ -1,0 +1,25 @@
+url:
+  visibility: '0'
+  pages:
+    - 'admin*'
+    - 'imagebrowser*'
+    - 'img_assist*'
+    - 'imce*'
+    - 'node/add/*'
+    - 'node/*/edit'
+    - 'print/*'
+    - 'printpdf/*'
+    - system/ajax
+    - 'system/ajax/*'
+theme:
+  visibility: '1'
+  themes:
+    alaf: alaf
+minimized:
+  options: '1'
+cdn:
+  bootstrap: 4.0.0-alpha.3
+files:
+  types:
+    css: 0
+    js: 0

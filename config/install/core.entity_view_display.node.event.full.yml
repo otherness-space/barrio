@@ -1,0 +1,91 @@
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.event.body
+    - field.field.node.event.field_event_date
+    - field.field.node.event.field_image
+    - image.style.large
+    - node.type.event
+  module:
+    - datetime
+    - ds
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: bootstrap-6-6-stacked
+      path: modules/bootstrap_layouts/templates/stacked/bootstrap-6-6-stacked
+      library: ''
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      top:
+        - node_title
+      sidebar_right:
+        - field_event_date
+        - body
+        - links
+      sidebar_left:
+        - field_image
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          wrapper: h1
+          class: title
+          link: false
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+id: node.event.full
+targetEntityType: node
+bundle: event
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+  field_event_date:
+    weight: 2
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+  field_image:
+    weight: 7
+    label: hidden
+    settings:
+      image_class: 'img-rounded img-responsive'
+      link_class: ''
+      image_style: large
+      image_link: file
+    third_party_settings:
+      ds:
+        ds_limit: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+    type: image
+  links:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

@@ -55,6 +55,7 @@ dependencies:
   - bootstrap_library
   - button_link
   - contact_storage
+  - rabbit_hole
 themes:
   - bartik
   - seven

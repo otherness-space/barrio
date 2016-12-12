@@ -107,6 +107,7 @@
         "drupal/filefield_paths": "^8.1.0",
         "drupal/menu_link_attributes": "^8.1.0",
         "drupal/redirect": "^8.1.0",
+        "drupal/rabbit_hole": "^8.x-1.0-beta1",
         "drupal/bootstrap_barrio": "^8.4.0"
     }
 }

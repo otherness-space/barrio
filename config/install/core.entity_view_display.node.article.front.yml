@@ -96,10 +96,10 @@ third_party_settings:
         speed: fast
         id: ''
         classes: ''
-id: node.article.teaser
+id: node.article.front
 targetEntityType: node
 bundle: article
-mode: teaser
+mode: front
 content:
   body:
     type: text_summary_or_trimmed
