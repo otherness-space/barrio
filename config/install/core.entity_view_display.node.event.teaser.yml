@@ -1,0 +1,148 @@
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.event.body
+    - field.field.node.event.field_event_date
+    - field.field.node.event.field_image
+    - node.type.event
+  module:
+    - datetime
+    - ds
+    - field_group
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      path: modules/ds
+      library: ''
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - group_h4
+        - field_event_date
+        - node_title
+        - body
+        - node_link
+    fields:
+      node_link:
+        plugin_id: node_link
+        weight: 5
+        label: hidden
+        formatter: default
+        settings:
+          'link text': 'Read more'
+          'link class': ''
+          wrapper: ''
+          class: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            classes:
+              - vtn
+            lb-col: false
+      node_title:
+        plugin_id: node_title
+        weight: 3
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          wrapper: h1
+          class: ''
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+  field_group:
+    group_h4:
+      children:
+        - field_event_date
+      parent_name: ''
+      weight: 0
+      label: h4
+      format_type: html_element
+      format_settings:
+        label: h4
+        element: h4
+        show_label: false
+        label_element: h3
+        attributes: ''
+        effect: none
+        speed: fast
+        id: ''
+        classes: ''
+id: node.event.teaser
+targetEntityType: node
+bundle: event
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 4
+    settings:
+      trim_length: 211
+    third_party_settings:
+      ds:
+        ft:
+          id: default
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
+  field_event_date:
+    type: datetime_custom
+    weight: 2
+    label: hidden
+    settings:
+      timezone_override: ''
+      date_format: 'd F Y'
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            ow: true
+            ow-el: i
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi: false
+            fi-def-at: false
+hidden:
+  field_image: true
+  langcode: true
+  links: true

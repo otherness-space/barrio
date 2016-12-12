@@ -41,21 +41,27 @@ dependencies:
   # contrib
   - metatag
   - ds
+  - ds_extras
   - ctools
   - token
   - redirect
   - pathauto
   - admin_toolbar
-#  - backup_migrate
+  - admin_toolbar_tools
+  #  - backup_migrate
   - block_styles
+  - block_styles_bootstrap
   - styles_api
   - filefield_paths
+  - field_group
   - menu_link_attributes
   - bootstrap_layouts
   - bootstrap_library
   - button_link
   - contact_storage
+  - contact_block
   - rabbit_hole
+  - rh_node
 themes:
   - bartik
   - seven
